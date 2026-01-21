@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;700&family=Courier+Prime&family=Cormorant+Garamond:wght@300;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #fdfcf0; /* Màu nền kem nhạt */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 100%;
+            max-width: 400px;
+            padding: 60px 40px;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            border: 1px solid #eee;
+        }
+
+        /* Tiêu đề nhỏ trên cùng */
+        .header-top {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        /* Chữ BIRTHDAY */
+        .birthday-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 55px;
+            font-weight: 400;
+            color: #4a5d4e; /* Màu xanh lá sẫm */
+            letter-spacing: 2px;
+            margin: 0;
+            line-height: 1;
+        }
+
+        /* Chữ Party kiểu nghệ thuật */
+        .party-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 45px;
+            color: #4a5d4e;
+            margin-top: -15px;
+            margin-bottom: 40px;
+        }
+
+        /* Lời mời chính */
+        .invitation-body {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* Khu vực thời gian */
+        .time-box {
+            margin-bottom: 40px;
+        }
+
+        .time {
+            font-family: 'Courier Prime', monospace;
+            font-size: 48px;
+            font-weight: bold;
+            color: #4a5d4e;
+            display: block;
+            border-top: 2px solid #4a5d4e;
+            border-bottom: 2px solid #4a5d4e;
+            display: inline-block;
+            padding: 5px 20px;
+            position: relative;
+        }
+
+        /* Hai dấu chấm tròn ở đường kẻ */
+        .time::before, .time::after {
+            content: "◆";
+            position: absolute;
+            font-size: 10px;
+            bottom: -8px;
+            color: #4a5d4e;
+        }
+        .time::before { left: -5px; }
+        .time::after { right: -5px; }
+
+        .date {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 3px;
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Địa điểm */
+        .location {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 50px;
+        }
+
+        .location span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .address {
+            font-family: 'Courier Prime', monospace;
+            font-size: 16px;
+            color: #777;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Lời cảm ơn */
+        .thank-you {
+            font-family: 'Courier Prime', monospace;
+            font-size: 16px;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header-top">Thiệp mời tham dự</div>
+        
+        <h1 class="birthday-text">BIRTHDAY</h1>
+        <div class="party-text">Party</div>
+
+        <div class="invitation-body">
+            Trân trọng kính mời bạn<br>
+            đến tham dự bữa tiệc<br>
+            sinh nhật của tôi
+        </div>
+
+        <div class="time-box">
+            <span class="time">19:00</span>
+            <span class="date">20.05.2025</span>
+        </div>
+
+        <div class="location">
+            Tại <span>Nhà hàng XXXX</span>
+            <span class="address">123 Anywhere St.,<br>Any City</span>
+        </div>
+
+        <div class="thank-you">Thank you</div>
+    </div>
+
+</body>
+</html>
